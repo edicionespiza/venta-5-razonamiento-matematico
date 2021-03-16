@@ -37,6 +37,24 @@
 	var sendvisitinfo = function(type,page){};
 	
 </script>
+<link href="appStyle.css" rel="stylesheet" >
+<script type="text/x-javascript">
+    //codigo javascript
+     
+    var isCtrl = false;
+    document.onkeyup=function(e){
+    if(e.which == 17) isCtrl=false;
+    }
+    document.onkeydown=function(e){
+    if(e.which == 17) isCtrl=true;
+    if(e.which == 80 && isCtrl == true) {
+    //Combinancion de teclas CTRL+P y bloquear su ejecucion en el navegador
+    return false;
+    }
+    }
+</script>
+
+<link rel="icon" href="../files/extfiles/piza_logo.png" sizes="32x32" />
 </head>	
 <body>
 	<script type="text/javascript" src="javascript/search_config.js"></script><script type="text/javascript" src="javascript/bookmark_config.js"></script>
